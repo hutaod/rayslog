@@ -1,0 +1,22 @@
+{
+  "name": "eslint-config-rayslog-app",
+  "version": "1.0-beta.1",
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ht1131589588/rayslog"
+  },
+  "author": {
+    "name": "ht1131589588",
+    "email": "1131589588@qq.com"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.6.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}
