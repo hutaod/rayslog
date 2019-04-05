@@ -39,12 +39,19 @@ module.exports = {
     'space-before-function-paren': ['error', 'never'],
     'space-before-blocks': ['error'],
     'no-unused-vars': ['warn'],
-    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1 }],
+    'no-multiple-empty-lines': ['error', {
+      max: 1,
+      maxEOF: 1
+    }],
 
     'import/newline-after-import': ['error'],
     'import/order': [
       'error',
-      { groups: [['builtin', 'external', 'internal']] }
+      {
+        groups: [
+          ['builtin', 'external', 'internal']
+        ]
+      }
     ],
 
     'jsx-a11y/anchor-is-valid': [
@@ -90,7 +97,6 @@ module.exports = {
             'state',
             'getChildContext',
             'componentWillMount',
-            'componentDidMount',
             'componentWillReceiveProps',
             'shouldComponentUpdate',
             'componentWillUpdate',
