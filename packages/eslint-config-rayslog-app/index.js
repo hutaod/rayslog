@@ -97,6 +97,7 @@ module.exports = {
             'state',
             'getChildContext',
             'componentWillMount',
+            'componentDidMount',
             'componentWillReceiveProps',
             'shouldComponentUpdate',
             'componentWillUpdate',
