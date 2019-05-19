@@ -1,0 +1,22 @@
+{
+  "name": "@rayslog/rayslog",
+  "version": "0.0.2",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ht1131589588/rayslog"
+  },
+  "author": {
+    "name": "ht1131589588",
+    "email": "1131589588@qq.com"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
