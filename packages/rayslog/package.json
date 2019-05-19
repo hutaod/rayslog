@@ -1,6 +1,6 @@
 {
   "name": "@rayslog/rayslog",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c rollup.config.js"
@@ -17,6 +17,5 @@
     "access": "public"
   },
   "keywords": [],
-  "license": "MIT",
-  "dependencies": {}
+  "license": "MIT"
 }
