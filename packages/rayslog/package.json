@@ -1,5 +1,5 @@
 {
-  "name": "@rayslog/rayslog",
+  "name": "@ht1131589588/rayslog",
   "version": "0.0.4",
   "main": "index.js",
   "scripts": {
@@ -17,5 +17,6 @@
     "access": "public"
   },
   "keywords": [],
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "e2ca089fcce9af297d397e5c36f32d8100aed68b"
 }
