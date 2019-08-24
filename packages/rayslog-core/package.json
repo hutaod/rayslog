@@ -1,10 +1,10 @@
 {
-  "name": "eslint-config-rayslog-app",
+  "name": "rayslog-core",
   "version": "0.0.6",
-  "files": [
-    "index.js"
-  ],
-  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ht1131589588/rayslog"
@@ -13,11 +13,10 @@
     "name": "ht1131589588",
     "email": "1131589588@qq.com"
   },
-  "peerDependencies": {
-    "babel-eslint": "^10.0.2",
-    "eslint": "^6.2.1",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-react": "^7.14.3"
+  "publishConfig": {
+    "access": "public"
   },
+  "keywords": [],
+  "license": "MIT",
   "gitHead": "8761efe3a0a93a17d713f185e8a9a8cc4e48d122"
 }
