@@ -1,6 +1,6 @@
 {
   "name": "@ht1131589588/rayslog-core",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c rollup.config.js"
