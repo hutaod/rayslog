@@ -1,26 +1,4 @@
-class App {
-  handles = {
-    effectError: []
-  }
+import model from './rayslog'
+import { initStore } from './store'
 
-  on(type, callback) {
-    if (!this.handles[type]) {
-      this.handles[type] = []
-    }
-    this.handles[type].push(callback)
-  }
-
-  off(type, callback) {
-    if (this.handles[type]) {
-      this.handles = this.handles[type].filters(item => item !== callback)
-    }
-  }
-
-  emit(type, ...rest) {
-    if (this.handles[type]) {
-      this.handles[type].forEach(cb => cb(...rest))
-    }
-  }
-}
-
-export default new App()
+export { initStore, model }

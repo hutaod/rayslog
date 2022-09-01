@@ -1,6 +1,6 @@
 import { take, fork, call, all, put, takeEvery } from 'redux-saga/effects'
 import isNode from 'detect-node'
-import App from '@ht1131589588/rayslog'
+import eventBus from './EventBus'
 import utils from './utils'
 
 export default function createSagas(model, sagaEffects) {
@@ -83,7 +83,7 @@ export default function createSagas(model, sagaEffects) {
         throw error || new Error('Unknow Error.')
       } else {
         yield put(deleteLoading)
-        App.emit('effectError', error)
+        eventBus.emit('effectError', error)
         rejectAction(error)
       }
       if (process.env.NODE_ENV === 'development') {

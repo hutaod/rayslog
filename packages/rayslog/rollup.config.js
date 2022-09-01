@@ -7,15 +7,28 @@ const config = {
   output: {
     file: 'dist/index.js',
     format: 'cjs',
-    name: 'rayslog',
+    name: 'RayslogCore',
     sourcemap: true,
     globals: {
-      react: 'React'
+      react: 'React',
+      'react-redux': 'ReactRedux',
+      redux: 'Redux',
+      'redux-saga': 'ReduxSaga',
+      'redux-thunk': 'ReduxThunk',
+      'detect-node': 'DetectNode'
     }
   },
-  external: ['react'],
+  external: [
+    'react',
+    'react-redux',
+    'redux',
+    'redux-saga',
+    'redux-thunk',
+    'detect-node'
+  ],
   plugins: [
     resolve({
+      modulesOnly: true,
       customResolveOptions: {
         moduleDirectory: ['../../node_modules', '../']
       }
@@ -32,9 +45,9 @@ const config = {
         ]
       ],
       plugins: [
-        '@babel/plugin-proposal-class-properties',
-        '@babel/plugin-proposal-object-rest-spread',
-        '@babel/plugin-transform-react-jsx'
+        '@babel/plugin-external-helpers',
+        '@babel/plugin-transform-react-jsx',
+        '@babel/plugin-transform-async-to-generator'
       ]
     }),
     commonjs({

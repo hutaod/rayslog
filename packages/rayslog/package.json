@@ -1,6 +1,7 @@
 {
-  "name": "@ht1131589588/rayslog",
-  "version": "0.0.9",
+  "name": "rayslog",
+  "version": "0.0.1",
+  "description": "react ssr framework",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c rollup.config.js"

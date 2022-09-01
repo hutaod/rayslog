@@ -33,7 +33,6 @@
     "rollup": "^2.79.0"
   },
   "dependencies": {
-    "@ht1131589588/rayslog": "0.0.9",
     "@rollup/plugin-alias": "^3.1.9",
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-commonjs": "^22.0.2",
