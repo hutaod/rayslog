@@ -1,0 +1,31 @@
+{
+  "name": "@rayslog/app",
+  "version": "0.0.1",
+  "description": "A JS/React/Vue Application Automation Build Scaffold With Zero Configuration Out Of The Box",
+  "keywords": [
+    "react",
+    "typescript",
+    "cli"
+  ],
+  "author": "hutao <1131589588@qq.com>",
+  "homepage": "https://github.com/ht1131589588/rayslog",
+  "license": "MIT",
+  "main": "lib/app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ht1131589588/rayslog.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/app.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/ht1131589588/rayslog/issues"
+  }
+}
