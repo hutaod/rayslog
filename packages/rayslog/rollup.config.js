@@ -1,6 +1,6 @@
-const resolve = require('rollup-plugin-node-resolve')
-const babel = require('rollup-plugin-babel')
-const commonjs = require('rollup-plugin-commonjs')
+const { nodeResolve } = require('@rollup/plugin-node-resolve')
+const { babel } = require('@rollup/plugin-babel')
+const commonjs = require('@rollup/plugin-commonjs')
 
 const config = {
   input: 'src/index.js',
@@ -27,29 +27,8 @@ const config = {
     'detect-node'
   ],
   plugins: [
-    resolve({
-      modulesOnly: true,
-      customResolveOptions: {
-        moduleDirectory: ['../../node_modules', '../']
-      }
-    }),
-    babel({
-      babelrc: false,
-      exclude: 'node_modules/**',
-      presets: [
-        [
-          '@babel/preset-env',
-          {
-            modules: false
-          }
-        ]
-      ],
-      plugins: [
-        '@babel/plugin-external-helpers',
-        '@babel/plugin-transform-react-jsx',
-        '@babel/plugin-transform-async-to-generator'
-      ]
-    }),
+    nodeResolve(),
+    babel(),
     commonjs({
       include: /node_modules/
     })

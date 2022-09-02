@@ -3,6 +3,7 @@
 .umi-production
 coverage
 dist/
+packages/**/dist/
 node_modules
 package-lock.json
 yarn.lock
